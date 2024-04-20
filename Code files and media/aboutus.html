@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneaker-head</title>
     <link rel="icon" href="tabicon.png" type="image/x-icon" />
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="aboutusstyle.css">
 </head>
-
 <body>
     <div class="container">
         <header>
@@ -23,6 +20,7 @@
                 </ul>
             </nav>
             <a class="cta" href="./contacts.html"><button id="contact">Contact</button></a>
+            <img src="C:\Users\prana\OneDrive\Documents\sneaker website\webtechsneaker-main (1)\webtechsneaker-main\Code files and media\moon.png" id="icon" onclick="toggleDarkMode()">
         </header>
 
         <main>
@@ -80,6 +78,16 @@
           </ul>
             <h4 style="text-align:center; position: relative; bottom: -15px;">2024 &#169 Sneaker-head India Pvt Lmt.</h4>
                 </footer>
+    <script>
+                    function toggleDarkMode() {
+    var container = document.querySelector(".container");
+    var elements = document.querySelectorAll("header, footer, .navlinks li a, button, h1, h2, h4, p");
+    container.classList.toggle("dark-mode");
+    elements.forEach(element => {
+        element.classList.toggle("dark-mode-text");
+    });
+}
+    </script>            
     </div>
 </body>
 
