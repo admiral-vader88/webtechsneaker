@@ -4,87 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/chinese-rocks');
 
-/* * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-} */
-
-/* body {
-    font-family: 'Outfit', sans-serif;
-    width: 100%;
-    margin: 0 10px;
-    transition: 0.2s background ease-in-out;
-    background-color: yellow;
-} */
-
-/* li,
-a,
-button {
-    font-weight: 500;
-    font-size: 16px;
-    color: #F6E7EE;
-    text-decoration: none;
-} */
-
-/* header{
-    position:fixed;
-    background-color: #24252A;
-    width: 100%;
-    box-shadow: 1px 1px 7px black;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 22px 6%;
-    z-index: 99999;
-}
-.logo{
-    cursor: pointer;
-    margin-right: auto;
-    height: 50px;
-}
-.navlinks{
-    list-style: none;
-}
-.navlinks li{
-    display: inline-block;
-    padding: 0px 20px;
-
-}
-.navlinks li a{
-    transition: all 0.3sec ease 0s;
-
-}
-
-.navlinks li a:hover{
-    color:#BE1332;
-    text-decoration: underline;
-} */
-/* 
-#contact {
-    margin-right: 85px;
-}
-
-button {
-    margin-left: 20px;
-    padding: 9px 25px;
-    background-color: #BE1332;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    width: fit-content;
-}
-
-button:hover {
-    background-color: rgba(0, 136, 169, 0.8);
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0; /* Adjust the padding as needed 
-}*/
 
 .big-heading {
     text-align: center;
@@ -97,12 +16,6 @@ button:hover {
     text-align: center;
     margin-top: 20px;  
 }
-
-/* .main-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
 
 .mainphoto {
     width: 100%;
@@ -118,32 +31,6 @@ button:hover {
 .mainphoto:hover {
     transform: scale(1.4) rotate(0deg) scaleX(-1);
 }
-/*
-.about-section {
-    margin-bottom: 50px; /* Adjust the margin bottom as needed 
-}
-footer {
-    background-color: #000000; /* Black background 
-    /* padding: 20px; Adjust padding as needed 
-    text-align: center; /* Center align the text 
-}
-.copyright p
-    color: #ffffff; /* White text color 
-    font-size: 18px; /* Increase font size 
-} */
-
-
-
-
-
-
-/* ----------------------------------------------------------------------------- */
-
-
-
-
-
-
 
 @import url('https://fonts.cdnfonts.com/css/outfit');@import url('https://fonts.cdnfonts.com/css/futura-std-4');@import url('https://fonts.cdnfonts.com/css/satoshi');@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/chinese-rocks');
@@ -153,9 +40,20 @@ footer {
     padding: 0;
     
 }
+:root{
+    --primary-color:#edf0f1;
+    --secondary-color: #212121;
+    /*--primary-color:#000106;
+    --secondary-color: #fff;*/
+}
+#icon{
+    width: 30px;
+    cursor:pointer;
+
+}
 #logoo{
     font-family: 'Chinese Rocks Rg',sans-serif;
-    color: #edf0f1;
+    color: var(--primary-color);
 }
 body{
     
@@ -173,9 +71,9 @@ li,a,button{
 }
 header{
     position:fixed;
-    background-color: #24252A;
+    background-color:var(--secondary-color);
     width: 100%;
-    box-shadow: 1px 1px 7px black;
+    box-shadow: 1px 1px 7px var(--secondary-color);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -224,14 +122,14 @@ button:hover{
 }
 section {
     /* Replace 60px with your navbar height */
-    background-color: #edf0f1;
+    background-color: var(--primary-color);
   }
 .mainphoto{
     width:100%;
     height:100%;
     filter: contrast(200px);
     transform: scale(1.1) rotate(30deg) scaleX(-1);
-    box-shadow: #24252A;
+    box-shadow: var(--secondary-color);
     z-index: 99;
     transition: 0.7s ease-in;
 
@@ -283,7 +181,7 @@ section {
     align-items: center;
     justify-content: space-between;
     margin:0px 20px;
-    background-color: #edf0f1;
+    background-color:var(--primary-color);
    
     height: calc(100vh-80px);
 }
@@ -314,7 +212,7 @@ section {
     }
 .Show{
     margin: 0;
-    background-color: #edf0f1;
+    background-color:var(--primary-color);
     padding: 10px 20px;
     width:fit-content;
     transition: 0.2sec all ease-in;
@@ -335,7 +233,7 @@ section {
     justify-content: center;
     align-items: center;
     gap:10px;
-    background-color: #edf0f1;
+    background-color: var(--primary-color);
 }
 .grids:hover{
     gap:-20px;
@@ -344,7 +242,7 @@ section {
 
     border-radius: 20px;
     line-height: 20px;
-    background-color: #24252A;
+    background-color:var(--secondary-color);
     display: inline-block;
     height: 400px;
     width: 300px;
@@ -352,7 +250,7 @@ section {
     font-weight: lighter;
     text-align: center;
     position: relative;
-    color: #edf0f1;
+    color: var(--primary-color);
     padding: 20px 20px;
     transition: 0.2s ease-in-out;
     
@@ -381,7 +279,7 @@ h2{
     align-items: center;
     margin: 0 20px;
     padding:22px 6% ;
-    background-color: #edf0f1;
+    background-color: var(--primary-color);
     
     height: 100vh;
   }
@@ -412,8 +310,8 @@ h2{
 footer{
     margin-top: 30px;
     height: 30vh;
-    background-color: #24252A;
-    color:#edf0f1;
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
 }
 #trend{
     display: block;
@@ -433,7 +331,7 @@ footer{
     justify-content: center;
     align-items: center;
     gap:10px;
-    background-color: #edf0f1;
+    background-color:var(--primary-color);
     flex-wrap: wrap;
 }
 
@@ -441,7 +339,7 @@ footer{
 .pos_product{
     border-radius: 20px;
     line-height: 20px;
-    background-color: #24252A;
+    background-color:var(--secondary-color);
     display: inline-block;
     height: 450px;
     width: 350px;
@@ -449,7 +347,7 @@ footer{
     font-weight: lighter;
     text-align: center;
     position: relative;
-    color: #edf0f1;
+    color: var(--primary-color);
     padding: 20px 20px;
     transition: 0.2s ease-in-out;
     align-items: flex-start;
@@ -492,4 +390,11 @@ footer{
     padding-left: 3%;
     padding-right: 3%;
     padding-top: 100px;
+}
+.dark-mode {
+    background-color: #212121 !important; /* Change to your preferred dark mode background color */
+}
+
+.dark-mode-text {
+    color: #fff !important;
 }
